@@ -47,3 +47,33 @@ Aspect Ratio:
 
 Quality:
 Professional conference presentation level.
+
+
+Concept:
+How an AI Engineering Student Builds Autonomous AI Agents
+
+Target Audience:
+Engineering students, computer science students, beginner AI developers, and tech enthusiasts.
+
+Brand/Project:
+CTOschool
+
+Headline:
+Build Autonomous AI Agents from Scratch
+
+One-line Front Message:
+Learn how modern AI agents think, plan, use tools, and automate real-world tasks.
+
+One-line Center Message:
+From Python + LLMs to Multi-Agent Systems and Automation Workflows.
+
+Key Numbers / Stats:
+- 70% of developers are experimenting with AI tools
+- AI agents can automate repetitive workflows 24/7
+- Build your first agent in under 30 minutes
+
+Tone:
+Modern, educational, futuristic, inspiring.
+
+Call To Action:
+Start your AI Engineering Journey with CTOschool
