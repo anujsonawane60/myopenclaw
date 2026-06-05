@@ -1,0 +1,22 @@
+Create a 60-second animated explainer video about the GitHub repository:
+https://github.com/nexu-io/html-video
+
+Explain:
+- What the project does
+- How HTML becomes MP4
+- Agent workflow
+- Templates and rendering
+- Local-first architecture
+
+Style:
+Apple keynote + modern startup demo.
+
+Include:
+- Animated architecture diagrams
+- Repository statistics
+- Code snippets
+- Workflow visualizations
+- Final call-to-action
+
+Aspect ratio: 16:9
+Duration: 60 seconds
