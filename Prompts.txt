@@ -1,0 +1,49 @@
+Create a 45-second animated explainer video about an AI engineering student learning to build autonomous agents.
+
+Style:
+- Modern tech documentary
+- Dark background with electric blue and cyan accents
+- Smooth transitions and cinematic motion graphics
+- Professional startup-quality visuals
+
+Scene 1 (0-8s):
+Title: "The Rise of AI Agents"
+Animated globe with AI nodes connecting across the world.
+Subtitle: "AI agents are transforming how software is built."
+
+Scene 2 (8-18s):
+Show a student working on a laptop.
+Floating labels:
+- Python
+- OpenAI
+- MCP
+- GitHub
+- OpenClaw
+Code streams animate around the screen.
+
+Scene 3 (18-30s):
+Workflow animation:
+Idea → AI Agent → Code → Testing → Deployment
+Each step lights up with animated arrows.
+
+Scene 4 (30-40s):
+Dashboard-style statistics:
+- 10x Faster Development
+- 24/7 Automation
+- Multi-Agent Collaboration
+Animated charts and counters.
+
+Scene 5 (40-45s):
+Large text:
+"Build the Future with AI Agents"
+Show glowing network effect and futuristic city background.
+End with a clean logo placeholder.
+
+Music:
+Inspiring futuristic electronic soundtrack.
+
+Aspect Ratio:
+16:9
+
+Quality:
+Professional conference presentation level.
