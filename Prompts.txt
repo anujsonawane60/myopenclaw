@@ -77,3 +77,29 @@ Modern, educational, futuristic, inspiring.
 
 Call To Action:
 Start your AI Engineering Journey with CTOschool
+
+OpenClaw Gateway
+│
+├── main-orchestrator agent
+│   ├── workspace-main/
+│   ├── MEMORY.md
+│   ├── global-state/
+│   └── skills/handoff-packet/
+│
+├── content-manager agent
+│   ├── workspace-content/
+│   ├── MEMORY.md
+│   ├── STATUS.md
+│   └── skills/content-specific/
+│
+├── ads-manager agent
+│   ├── workspace-ads/
+│   ├── MEMORY.md
+│   ├── STATUS.md
+│   └── skills/ads-specific/
+│
+└── lifestyle-manager agent
+    ├── workspace-life/
+    ├── MEMORY.md
+    ├── STATUS.md
+    └── skills/lifestyle-specific/
