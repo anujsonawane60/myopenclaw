@@ -103,3 +103,14 @@ OpenClaw Gateway
     ├── MEMORY.md
     ├── STATUS.md
     └── skills/lifestyle-specific/
+
+
+~/.openclaw/skills/
+  gmail-summary/
+  calendar-briefing/
+  web-research/
+  document-summary/
+  file-organizer/
+  handoff-packet/
+  approval-request/
+
