@@ -1,48 +1,59 @@
-# OpenClaw Agents
+# OpenClaw Use Cases
 
-Central repository for **OpenClaw** agent definitions. Every agent is a single
-Markdown file (`*.agent.md`) with YAML frontmatter for metadata and a Markdown
-body for the system prompt / instructions.
+A catalog of ready-to-use **OpenClaw** use cases. Each entry is a small folder of Markdown that
+tells you what a capability does, what you need, and the **exact prompts to paste to OpenClaw** to
+set it up. You don't run commands yourself — you talk to OpenClaw, and it installs and schedules
+things for you.
+
+> Come to this repo, find a use case, copy the prompts, paste them to OpenClaw. Done.
+
+## Catalog
+
+| Use case | What it does | Based on | Entry |
+|----------|--------------|----------|-------|
+| **last30days** | Daily 7:00 AM morning brief: what people said about your topics in the last ~30 days, scored by real engagement (Reddit/X/YouTube/TikTok/Polymarket/…) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) (MIT) | [`use-cases/last30days/`](use-cases/last30days/) |
+| **gog** | Google Workspace from OpenClaw — Gmail, Calendar, Drive, Contacts, Sheets, Docs in plain language; optional 7:00 AM agenda brief | [gogcli.sh](https://gogcli.sh) · [clawhub.ai/steipete/gog](https://clawhub.ai/steipete/gog) | [`use-cases/gog/`](use-cases/gog/) |
+
+Full index: [`use-cases/`](use-cases/).
+
+## How to use a use case
+
+1. Make sure your **OpenClaw is set up** (that's usually the only requirement).
+2. Open the use case's folder and read its `README.md`.
+3. Copy the prompts from its `INSTALL.md` and paste them to OpenClaw.
+4. OpenClaw installs the skill, connects any accounts, and schedules the task for you.
+
+Every prompt lives in a fenced code block, so on GitHub each has a one-click **copy** button.
 
 ## Layout
 
 ```
 .
-├── agents/                # Agent definitions, grouped by role
-│   ├── orchestrator/      #   coordinator agents that delegate work
-│   ├── gateway/           #   OpenClaw Gateway entry-point agents
-│   └── workers/           #   task-focused agents doing the actual work
-├── use-cases/             # Catalog of installable use cases (pointers to upstream skills)
-├── skills/                # Reusable, composable skills agents can load
-├── workflows/             # Multi-agent pipelines (which agents run, in what order)
-├── shared/                # Content reused across agents
-│   ├── prompts/           #   prompt fragments / partials
-│   └── context/           #   shared domain context, glossaries, policies
-├── registry/              # Machine-readable index of all agents
-├── docs/                  # Authoring guides and conventions
-└── .templates/            # Templates for new files
+├── use-cases/             # The catalog — one folder per use case
+│   ├── README.md          #   index of all use cases + how to add one
+│   ├── last30days/        #   daily morning brief of any topic
+│   └── gog/               #   Google Workspace (Gmail/Calendar/Drive/Docs)
+└── README.md              # This file
 ```
 
-## Quick start
+## Anatomy of a use case
 
-1. Copy `.templates/agent.template.md` into the right `agents/<role>/` folder.
-2. Rename it `<name>.agent.md` (kebab-case).
-3. Fill in the frontmatter and the prompt body.
-4. Add a row to `registry/agents.md`.
+Each `use-cases/<name>/` folder contains:
 
-See [`docs/CONVENTIONS.md`](docs/CONVENTIONS.md) for the full spec.
+| File | What it's for |
+|------|---------------|
+| `README.md` | What it does, when to use it, the quick version |
+| `SKILL.md` | What the underlying skill actually is (and the artifact, if small) |
+| `INSTALL.md` | Copy-paste prompts to give OpenClaw — install, connect, schedule |
+| `requirements.md` | What you need first (usually just OpenClaw set up) |
+| `PROMPTS.md` | *(optional)* a prompt for every individual use case, e.g. [`gog`](use-cases/gog/PROMPTS.md) |
 
-## Use-case catalog
+## Add a new use case
 
-Want a ready-made capability for your OpenClaw? Browse [`use-cases/`](use-cases/) — each entry
-is a small pointer (what it does, how to install, what keys it needs) to an upstream skill you
-can drop in. First entry: [`use-cases/last30days/`](use-cases/last30days/).
+1. Create `use-cases/<name>/`.
+2. Add `README.md`, `SKILL.md`, `INSTALL.md`, and `requirements.md` (and `PROMPTS.md` if the
+   skill has many distinct actions).
+3. Put every prompt the user should copy inside a fenced ```` ``` ```` code block.
+4. Add a row to the catalog tables in this file and in [`use-cases/README.md`](use-cases/README.md).
 
-## File naming
-
-| Kind      | Pattern                | Example                          |
-|-----------|------------------------|----------------------------------|
-| Agent     | `<name>.agent.md`      | `code-reviewer.agent.md`         |
-| Skill     | `<name>.skill.md`      | `web-search.skill.md`            |
-| Workflow  | `<name>.workflow.md`   | `pr-review.workflow.md`          |
-| Prompt    | `<name>.prompt.md`     | `safety-preamble.prompt.md`      |
+See [`use-cases/`](use-cases/) for the conventions and the existing entries as examples.
