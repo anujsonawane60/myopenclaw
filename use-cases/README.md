@@ -19,6 +19,7 @@ use-cases/<name>/
 | Use case | What it does | Based on | Entry |
 |----------|--------------|----------|-------|
 | **last30days** | Daily 7:00 AM morning brief: what people said about your topics in the last ~30 days, scored by real engagement (Reddit/X/YouTube/TikTok/Polymarket/…) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) (MIT) | [`last30days/`](last30days/) |
+| **gog** | Google Workspace from OpenClaw — Gmail, Calendar, Drive, Contacts, Sheets, Docs in plain language; optional 7:00 AM agenda brief | [gogcli.sh](https://gogcli.sh) · [clawhub.ai/steipete/gog](https://clawhub.ai/steipete/gog) | [`gog/`](gog/) |
 
 ## Adding a new use case
 
