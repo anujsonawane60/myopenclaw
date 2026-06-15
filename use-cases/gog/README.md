@@ -23,10 +23,13 @@ calendar and your important unread email and sends you one short brief.
 
 ## The quick version
 
-1. Make sure you have OpenClaw set up (see [`requirements.md`](requirements.md)).
-2. Open the [`INSTALL.md`](INSTALL.md) prompts and paste them to OpenClaw.
-3. Connect your Google account once (OAuth), then just ask OpenClaw about your mail, calendar,
-   and files — or get a 7:00 AM agenda brief every day.
+1. Have OpenClaw set up, plus your **Gmail address** and a Google OAuth **`client_secret.json`**
+   file ready (see [`requirements.md`](requirements.md)).
+2. Copy the **single setup prompt** at the top of [`INSTALL.md`](INSTALL.md), put your email in,
+   and paste it to OpenClaw.
+3. OpenClaw installs everything, tells you where to save `client_secret.json`, authorizes your
+   account, and confirms when it's done — then just ask it about your mail, calendar, and files,
+   or get a 7:00 AM agenda brief every day.
 
 ## Source
 

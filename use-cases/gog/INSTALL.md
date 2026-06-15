@@ -1,8 +1,47 @@
 # Install & connect — just talk to OpenClaw
 
-You don't run these commands yourself. Open a chat with **OpenClaw** and paste the prompts below.
-OpenClaw installs `gog`, walks you through connecting your Google account, and sets up the
-7:00 AM agenda brief.
+You don't run any commands yourself. Open a chat with **OpenClaw** and paste the **one prompt**
+below. OpenClaw installs `gog`, tells you where to drop your `client_secret.json`, authorizes
+your account, and confirms when it's done.
+
+## ⚡ One prompt — copy, fill in your email, paste to OpenClaw
+
+> Before you start you need two things (details in [`requirements.md`](requirements.md)):
+> your **Gmail address** and a **Google OAuth `client_secret.json`** file. OpenClaw will tell
+> you the exact path to save the file when it asks.
+
+```
+Set up the "gog" Google Workspace tool in my OpenClaw. Follow this guide:
+https://github.com/anujsonawane60/myopenclaw/tree/main/use-cases/gog
+
+My Google account: you@gmail.com
+
+Do the whole setup end to end and walk me through it:
+1. Install the gog CLI (brew install steipete/tap/gogcli) and the gog skill
+   (https://clawhub.ai/steipete/gog).
+2. Tell me the exact file path where I should save my Google OAuth client_secret.json,
+   then pause and wait until I confirm I've saved it there.
+3. Register those credentials and authorize you@gmail.com for gmail, calendar, drive,
+   contacts, sheets, and docs.
+4. Verify it works by listing my next 3 calendar events, then tell me setup is complete.
+
+Never send email or create calendar events without asking me first.
+```
+
+That's the whole setup. **What happens after you paste it:**
+
+1. OpenClaw installs the `gog` CLI + skill.
+2. OpenClaw replies with the **exact path** to save your `client_secret.json` → you put the file
+   there and tell OpenClaw "done".
+3. OpenClaw authorizes your account (a Google sign-in / consent window).
+4. OpenClaw lists your next 3 events and confirms **setup complete**. ✅
+
+Then you can schedule a 7:00 AM agenda brief (Step 3 below) or just start asking
+([`PROMPTS.md`](PROMPTS.md) has a prompt for every Gmail/Calendar/Drive/Docs action).
+
+---
+
+## Prefer step-by-step? (same thing, broken out)
 
 > Replace **you@gmail.com** with your real Google address, and the **bracketed bits** with what
 > you actually want.

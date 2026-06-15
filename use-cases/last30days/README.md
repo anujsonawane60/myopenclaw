@@ -21,8 +21,10 @@ actually engage with, and sends you one short brief.
 ## The quick version
 
 1. Make sure you have OpenClaw set up (see [`requirements.md`](requirements.md)).
-2. Open the [`INSTALL.md`](INSTALL.md) prompts and paste them to OpenClaw.
-3. Get a morning brief at 7:00 AM every day.
+2. Copy the **single setup prompt** at the top of [`INSTALL.md`](INSTALL.md), add your topics,
+   and paste it to OpenClaw.
+3. OpenClaw installs the skill, schedules the job, and confirms — then you get a morning brief at
+   7:00 AM every day. No accounts or API keys needed to start.
 
 ## Source
 
